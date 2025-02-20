@@ -11,7 +11,7 @@ function App() {
 
   const fetchArticles = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/scrape");
+      const res = await axios.get("https://title-aggregator-mulah.onrender.com/scrape");
       setArticles(res.data.articles);
     } catch (error) {
       console.error("Error fetching data", error);
